@@ -94,25 +94,10 @@ export default class CustomMenuCreationScreen extends Component {
             accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
             no sea takimata sanctus est Lorem ipsum dolor sit amet.
           </Text>
-          <Text
-            style={{
-              fontSize: 20,
-              fontWeight: 'bold',
-              color: TEXT_COLOR,
-              marginBottom: 10,
-            }}>
-            Choice of Add On
-          </Text>
-          <AddOn />
-          <AddOn />
-          <AddOn />
-          <AddOn />
           <Button
-            placeholder="Add to Menu"
-            veriant="primary"
-            onPress={() => {
-              NavigateTo('CustomMenu', navigation);
-            }}
+            placeholder="Add Item"
+            veriant="primary_outlined"
+            onPress={() => {}}
           />
           <View style={{marginBottom: 50}} />
         </ScrollView>

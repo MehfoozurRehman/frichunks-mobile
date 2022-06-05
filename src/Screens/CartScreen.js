@@ -17,36 +17,12 @@ export default class CartScreen extends Component {
         <Header
           light={true}
           placeholder="Cart"
-          backPath="CustomMenuCreation"
+          backPath="CustomMenu"
           navigation={navigation}
         />
         <ScrollView style={{flex: 1, paddingHorizontal: 20}}>
           <MenuCarouselItem title="Menu name" button={false} istitle={true} />
-          <View
-            style={{
-              display: 'flex',
-              flexDirection: 'row',
-              alignItems: 'center',
-              marginVertical: 10,
-              marginBottom: 50,
-            }}>
-            <TextInput
-              placeholder="Enter Coupon Code"
-              style={{
-                height: 50,
-                width: '70%',
-                backgroundColor: 'transparent',
-                borderColor: WHITE,
-                borderWidth: 1,
-                borderTopLeftRadius: 8,
-                borderBottomLeftRadius: 8,
-                paddingHorizontal: 20,
-                color: WHITE,
-              }}
-              placeholderTextColor={WHITE}
-            />
-            <Button veriant="third" placeholder="Apply" onPress={() => {}} />
-          </View>
+          <View style={{marginBottom: 50}} />
           <Button
             veriant="primary"
             placeholder="Checkout"

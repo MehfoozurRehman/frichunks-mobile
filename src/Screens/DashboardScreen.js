@@ -94,7 +94,7 @@ export default class DashboardScreen extends Component {
                   alignItems: 'center',
                 }}
                 onPress={() => {
-                  NavigateTo('NewOrder', navigation);
+                  NavigateTo('CustomMenu', navigation);
                 }}>
                 <Svg
                   xmlns="http://www.w3.org/2000/svg"

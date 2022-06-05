@@ -13,7 +13,7 @@ export default class OrderPlacedScreen extends Component {
       <View style={{flex: 1, height: Height, paddingHorizontal: 20}}>
         <View
           style={{
-            height: '88%',
+            height: '84%',
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
@@ -54,9 +54,10 @@ export default class OrderPlacedScreen extends Component {
           veriant="primary"
           placeholder="Back to menu"
           onPress={() => {
-            NavigateTo('MenuSelect', navigation);
+            NavigateTo('Dashboard', navigation);
           }}
         />
+        <View style={{marginBottom: '15%'}} />
       </View>
     );
   }

@@ -94,17 +94,6 @@ export default class LoginScreen extends Component {
                 </Text>
               </TouchableOpacity>
             </View>
-            <View style={{marginBottom: 50}}>
-              <Button
-                placeholder="Continue as Guest"
-                veriant="secondary"
-                onPress={() => {
-                  navigation.navigate('Dashboard', {
-                    ordered: false,
-                  });
-                }}
-              />
-            </View>
           </ScrollView>
         </ImageBackground>
       </View>

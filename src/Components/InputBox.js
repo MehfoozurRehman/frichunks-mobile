@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {TextInput, TouchableOpacity, View} from 'react-native';
+import {TextInput, TouchableOpacity} from 'react-native';
 import {PRIMARY, TEXT_COLOR, WHITE} from '../Constants/Colors';
 import Svg, {Path} from 'react-native-svg';
 
@@ -128,11 +128,10 @@ export default function InputBox({placeholder, variant, secureTextEntry, svg}) {
           />
         </Svg>
         <TextInput
-          style={{width: '100%'}}
+          style={{width: '100%', color: TEXT_COLOR}}
           placeholder={placeholder}
           placeholderTextColor="#707070"
           secureTextEntry={secureTextEntry}
-          style={{color: TEXT_COLOR}}
           onFocus={() => {
             setFocuse(true);
           }}

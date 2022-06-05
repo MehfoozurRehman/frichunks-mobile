@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {ScrollView, View, TouchableOpacity} from 'react-native';
-import InputBox from '../Components/InputBox';
 import {PRIMARY, THIRD, WHITE} from '../Constants/Colors';
 import {Height, Width} from '../Constants/Constants';
 import Svg, {Path} from 'react-native-svg';
@@ -17,7 +16,7 @@ export default class CustomMenuScreen extends Component {
         <Header
           light={false}
           placeholder="Custom Menu"
-          backPath="FeatureSelectCustom"
+          backPath="Dashboard"
           navigation={navigation}
         />
         <ScrollView style={{flex: 1}}>
@@ -27,12 +26,10 @@ export default class CustomMenuScreen extends Component {
               marginHorizontal: 20,
               borderRadius: 5,
               padding: 20,
+              marginBottom: 20,
             }}>
             <MenuItem variant="secondary" />
             <MenuItem variant="secondary" lastItem={true} />
-          </View>
-          <View style={{paddingHorizontal: 20, marginVertical: 10}}>
-            <InputBox variant="search" placeholder="Search" />
           </View>
           <View
             style={{
@@ -46,7 +43,7 @@ export default class CustomMenuScreen extends Component {
         </ScrollView>
         <TouchableOpacity
           onPress={() => {
-            NavigateTo('CustomMenuCreation', navigation);
+            NavigateTo('Cart', navigation);
           }}
           style={{
             position: 'absolute',
